@@ -1,0 +1,82 @@
+/* Variables */
+
+:root {
+  --body-font-col: hsl(220, 15%, 55%);
+  --heading-font-col: hsl(218, 44%, 22%);
+  --background-col: hsl(212, 45%, 89%);
+  --accent-col: hsl(0, 0%, 100%);
+}
+
+/*CSS RESET*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--body-font-col);
+  background-color: var(--background-col);
+  height: 100vh;
+}
+
+/* Utility classes */
+
+.padding-small {
+  padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gutter-bottom {
+  margin-bottom: 0.8rem;
+}
+
+/* Element styling */
+
+main {
+  display: flex;
+  height: 97%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-col);
+  border-radius: 1rem;
+  width: min(85%, 320px);
+  margin: auto auto;
+  vertical-align: middle;
+}
+
+.container > img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.container h2 {
+  color: var(--heading-font-col);
+  line-height: 1.75rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+/* Footer */
+
+.attribution {
+  text-align: center;
+  color: var(--heading-font-col);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
